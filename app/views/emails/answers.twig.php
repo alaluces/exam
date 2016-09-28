@@ -4,11 +4,14 @@
         <div class="col-md-4">            
         </div>  
         <div class="col-md-4">            
-            <h3>Hello {{ name }}, Here are the answers</h3>    
+            <h3>Exam {{ answers.examNumber }} answers</h3> 
+            Applicant Name: <b>{{ answers.applicantName }}</b><br />
+            Date Taken: <b>{{ answers.dateStart }}</b><br />
+            Date Completed: <b>{{ dateEnd }}</b><br />  
+            Duration: <b>{{ duration }}</b><br /><br />   
             <ul>
-                {% for key, answer in answers if key != '_token' and key != 'btnsubmit' %}
-                <li>{{ key }} - {{ answer }}</li>
-
+                {% for key, answer in answers if key[0:6] == 'answer' %}
+                    <li>{{ key }} - {{ answer }}</li>
                 {% endfor %}
             </ul>
         </div>  

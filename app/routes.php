@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', 'ExamController@showIntro');
+Route::get('/end', 'ExamController@showEnd');
 Route::get('/exam1', 'ExamController@start1');
 Route::get('/exam2', 'ExamController@start2');
 Route::post('/save', array('as' => 'examSaveItems', 'uses' => 'ExamController@save'));    

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    
+   
     <br>
     
     <div class="row">
@@ -12,7 +12,11 @@
                 <source src="{{ Theme.asset.url('snd/a.mp3') }}" type="audio/mpeg">
             </audio>    
             -->
+            <br /><br />
             {{ Form.open({'action': 'examSaveItems', 'class':'form-inline', 'id':'userForm'}) }}
+            <input type="hidden" name="examNumber" value="1"> 
+            <input type="hidden" name="dateStart" value="{{ dateStart }}"> 
+            <b>Name of applicant</b> <input type="text" class="form-control input-sm" name="applicantName" style="width:200px">
             <h3>Section 1 Questions 1-10</h3>
             <br />
             <b>Questions 1-5</b><br />

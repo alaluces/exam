@@ -22,7 +22,9 @@
             </ul>             
             
             <br /><br />
-            Click <a onclick="return confirm('The exam will now start. Do you want to proceed?');" href="{{ URL.to('1/start') }}" class="btn btn-info" type="button">Here</a> to begin exam now
+            Click <a onclick="return confirm('The exam will now start. Do you want to proceed?');" href="{{ URL.to('exam1') }}" class="btn btn-info" type="button">Here</a> to begin exam 1
+            <br /><br />
+            Click <a onclick="return confirm('The exam will now start. Do you want to proceed?');" href="{{ URL.to('exam2') }}" class="btn btn-info" type="button">Here</a> to begin exam 2
         </div>  
         <div class="col-md-4">            
         </div>       
