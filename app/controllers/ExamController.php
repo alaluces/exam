@@ -11,17 +11,17 @@ class ExamController extends BaseController {
     
     public function showIntro()
     { 
-        return $this->theme->of('exam1Intro')->render();
+        return $this->theme->of('examIntro')->render();
     }  
     
     public function start1()
     { 
-        return $this->theme->of('exam1Start')->render();
+        return $this->theme->of('exam1')->render();
     }
     
     public function start2()
     { 
-        return $this->theme->of('exam2Start')->render();
+        return $this->theme->of('exam2')->render();
     }
 
     public function save()
