@@ -26,8 +26,18 @@ class ExamController extends BaseController {
 
     public function save()
     { 
-        dd(Input::all());
-        //return $this->theme->of('examStart')->render();
+        //dd(Input::all());
+        /*
+        Mail::send('emails.answers', array('answers' => Input::all()), function($message)
+        {
+            $message->to('support@iconceptcontactsolutions.com', 'IT')->subject('TEST');
+        }); 
+         
+         * 
+         */ 
+        return $this->theme->of('emails.answers', array('answers' => Input::all()))->render();
+         
+         
     }
     
     
