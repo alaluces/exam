@@ -5,6 +5,9 @@
         
         <div class="col-md-8">
             {{ Form.open({'action': 'examSaveItems', 'class':'form-inline', 'id':'userForm'}) }}
+            <input type="hidden" name="examNumber" value="2"> 
+            <input type="hidden" name="dateStart" value="{{ dateStart }}"> 
+            <b>Name of applicant</b> <input type="text" class="form-control input-sm" name="applicantName" style="width:200px">
             <h3 align="center">TEST II</h3>
             <h3 align="center">ABSTRACT REASONING</h3><br/>
             <p> Instructions: Answer as many questions as you can in ten (10) minutes, write the letter on which corresponds to the correct answer on the answer sheet provided. </p>
@@ -648,7 +651,7 @@
 </div>
 
 <script>
-window.onbeforeunload = function (e) {
+    window.onbeforeunload = function (e) {
   var message = "Your confirmation message goes here.",
   e = e || window.event;
   // For IE and Firefox
@@ -659,4 +662,5 @@ window.onbeforeunload = function (e) {
   // For Safari
   return message;
 };
+
 </script>

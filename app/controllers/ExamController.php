@@ -21,7 +21,7 @@ class ExamController extends BaseController {
     
     public function start2()
     { 
-        return $this->theme->of('exam2')->render();
+        return $this->theme->of('exam2', ['dateStart' => date("Y-m-d H:i:s")])->render();
     }
     
     public function showEnd()
