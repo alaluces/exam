@@ -1,4 +1,14 @@
 div.solid {
-    border-color: black;
-    border-style: solid;
+    border: solid thin black;
 }
+
+
+    
+    
+div .form-group .radio-inline{
+    float: left;
+    margin-left: 20px;
+    
+    
+}
+
