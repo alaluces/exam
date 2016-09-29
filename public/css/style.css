@@ -3,12 +3,27 @@ div.solid {
 }
 
 
-    
-    
 div .form-group .radio-inline{
     float: left;
     margin-left: 20px;
-    
+   
+}
+.submit {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    font-weight: bold;
+    font: Arial;
     
 }
 
+.submit:hover {
+    background-color: #43bddb;
+    
+}

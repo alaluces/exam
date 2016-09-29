@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    
+   
     <br>
     
     <div class="row">
@@ -12,7 +12,11 @@
                 <source src="{{ Theme.asset.url('snd/a.mp3') }}" type="audio/mpeg">
             </audio>    
             -->
+            <br /><br />
             {{ Form.open({'action': 'examSaveItems', 'class':'form-inline', 'id':'userForm'}) }}
+            <input type="hidden" name="examNumber" value="1"> 
+            <input type="hidden" name="dateStart" value="{{ dateStart }}"> 
+            <b>Name of applicant</b> <input type="text" class="form-control input-sm" name="applicantName" style="width:200px">
             <h3>Section 1 Questions 1-10</h3>
             <br />
             <b>Questions 1-5</b><br />
@@ -148,7 +152,7 @@
                     <tr>
                         <td> <b> (19) </b> <input type="text" class="form-control input-sm" name="answer19" style="width:100px"> </td>
                         <td>Staying on track for long periods</td>
-                        <td> <b> (20) </b><input type="text" class="form-control input-sm" name="answer15" style="width:100px"> students only </td>
+                        <td> <b> (20) </b><input type="text" class="form-control input-sm" name="answer20" style="width:100px"> students only </td>
                     </tr>
                     
                     
@@ -180,7 +184,7 @@
             <b> Themes: </b> Connections between <br/>
             <b> • (28) </b> <input type="text" class="form-control input-sm" name="answer28" style="width:200px"> and outlook <br/>
             <b> • (29) </b> <input type="text" class="form-control input-sm" name="answer29" style="width:200px"> and well-being <br/>
-            <b> • </b> individuals and the need for <b> (30)</b> <input type="text" class="form-control input-sm" name="answer29" style="width:200px"> <br/>
+            <b> • </b> individuals and the need for <b> (30)</b> <input type="text" class="form-control input-sm" name="answer30" style="width:200px"> <br/>
             <br />
             <b>Section 4 Questions 31-40 <br/> <br/>
 
@@ -297,10 +301,16 @@
 </div>
 
 <script>
-    
-    
-    
-    
-    
-    
+    window.onbeforeunload = function (e) {
+  var message = "Your confirmation message goes here.",
+  e = e || window.event;
+  // For IE and Firefox
+  if (e) {
+    e.returnValue = message;
+  }
+
+  // For Safari
+  return message;
+};
+
 </script>

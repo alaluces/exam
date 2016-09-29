@@ -1,9 +1,10 @@
 <?php
 
-Route::get('/1/', 'ExamController@showIntro');
-Route::get('/1/start', 'ExamController@start1');
-Route::get('/2/start', 'ExamController@start2');
-Route::post('/1/save', array('as' => 'examSaveItems', 'uses' => 'ExamController@save'));    
+Route::get('/', 'ExamController@showIntro');
+Route::get('/end', 'ExamController@showEnd');
+Route::get('/exam1', 'ExamController@start1');
+Route::get('/exam2', 'ExamController@start2');
+Route::post('/save', array('as' => 'examSaveItems', 'uses' => 'ExamController@save'));    
 
 // protected routes
 Route::group(['before' => 'auth'], function(){
