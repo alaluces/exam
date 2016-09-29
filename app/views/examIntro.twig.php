@@ -3,9 +3,9 @@
     <br>
     
     <div class="row">
-        <div class="col-md-4">            
+        <div class="col-md-3">            
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-6">
             
             <h3>Instructions to candidates</h3>    
             <ul>
@@ -25,9 +25,9 @@
             <b>(LISTENING EXAM) </b>
             <br /><br />
             Click <a onclick="return confirm('The exam will now start. Do you want to proceed?');" href="{{ URL.to('exam2') }}" class="btn btn-info" type="button">Here</a> to begin exam 2
-             <b>(ABSTRACT LISTENING) </b>
+             <b>(ABSTRACT REASONING) </b>
         </div>  
-        <div class="col-md-4">            
+        <div class="col-md-3">            
         </div>       
  
     </div>
