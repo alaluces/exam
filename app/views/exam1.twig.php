@@ -152,7 +152,7 @@
                     <tr>
                         <td> <b> (19) </b> <input type="text" class="form-control input-sm" name="answer19" style="width:100px"> </td>
                         <td>Staying on track for long periods</td>
-                        <td> <b> (20) </b><input type="text" class="form-control input-sm" name="answer15" style="width:100px"> students only </td>
+                        <td> <b> (20) </b><input type="text" class="form-control input-sm" name="answer20" style="width:100px"> students only </td>
                     </tr>
                     
                     
@@ -184,7 +184,7 @@
             <b> Themes: </b> Connections between <br/>
             <b> • (28) </b> <input type="text" class="form-control input-sm" name="answer28" style="width:200px"> and outlook <br/>
             <b> • (29) </b> <input type="text" class="form-control input-sm" name="answer29" style="width:200px"> and well-being <br/>
-            <b> • </b> individuals and the need for <b> (30)</b> <input type="text" class="form-control input-sm" name="answer29" style="width:200px"> <br/>
+            <b> • </b> individuals and the need for <b> (30)</b> <input type="text" class="form-control input-sm" name="answer30" style="width:200px"> <br/>
             <br />
             <b>Section 4 Questions 31-40 <br/> <br/>
 
